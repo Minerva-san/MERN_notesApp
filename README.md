@@ -7,7 +7,7 @@ Designed as a beginner-to-intermediate full-stack project focused on clean archi
 
 ---
 
-# Features
+## Features
 
 ### ✨ Core Functionality
 
@@ -24,9 +24,7 @@ Designed as a beginner-to-intermediate full-stack project focused on clean archi
 
 ### 📱 Responsive UI
 
-* Mobile-friendly layout
-* Optimized for desktop, tablet, and smaller devices
-* Clean and minimal user interface
+* Mobile-friendly layout: Optimized for desktop, tablet, and smaller devices
 
 ### 🔒 Security & Backend Enhancements
 
@@ -37,18 +35,17 @@ Designed as a beginner-to-intermediate full-stack project focused on clean archi
 ### 🗄️ Database Integration
 
 * MongoDB database using Mongoose ODM
-* Efficient NoSQL document storage
 * Persistent note management system
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
 * React.js
 * Vite
-* CSS / Tailwind CSS *(modify based on your project)*
+* Tailwind CSS 
 
 ### Backend
 
@@ -70,7 +67,7 @@ Designed as a beginner-to-intermediate full-stack project focused on clean archi
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure
 
 ```bash id="lh30uo"
 MERN_notesApp/
@@ -94,7 +91,7 @@ MERN_notesApp/
 
 ---
 
-# Prerequisites
+## Prerequisites
 
 Before running the project locally, ensure you have installed:
 
@@ -105,9 +102,9 @@ Before running the project locally, ensure you have installed:
 
 ---
 
-# Installation & Setup
+## Installation & Setup
 
-## 1. Clone the Repository
+### 1. Clone the Repository
 
 ```bash id="u8n4hf"
 git clone https://github.com/Minerva-san/MERN_notesApp.git
@@ -116,7 +113,7 @@ cd MERN_notesApp
 
 ---
 
-## 2. Backend Setup
+### 2. Backend Setup
 
 Navigate into the backend folder:
 
@@ -132,7 +129,13 @@ MONGODB_URI=your_mongodb_connection_string
 PORT=5001
 NODE_ENV=development
 ```
-
+### How to Get MONGODB_URI
+* Create a free account on MongoDB Atlas
+* Create a cluster
+* Click Connect
+* Choose Drivers
+* Copy the connection string
+  
 Start the backend server:
 
 ```bash id="f3cdmv"
@@ -147,7 +150,7 @@ http://localhost:5001
 
 ---
 
-## 3. Frontend Setup
+### 3. Frontend Setup
 
 Open another terminal:
 
@@ -165,7 +168,7 @@ http://localhost:5173
 
 ---
 
-# API Endpoints
+## API Endpoints
 
 | Method | Endpoint         | Description             |
 | ------ | ---------------- | ----------------------- |
@@ -176,7 +179,7 @@ http://localhost:5173
 
 ---
 
-# 🌐 Deployment
+## 🌐 Deployment
 
 This application is deployed using **Render**. Live Demo: 
 ```bash id="8j73zv"
@@ -184,7 +187,7 @@ https://mern-notesapp-ahmq.onrender.com/
 ```
 ---
 
-# What I Learned
+## What I Learned
 
 This project helped me strengthen my understanding of:
 
@@ -199,9 +202,9 @@ This project helped me strengthen my understanding of:
 
 ---
 
-# 💡 Credits
+## 💡 Credits
 
-This project was built by following and learning from the excellent MERN Stack tutorial by:
+This project was built by following and learning from the excellent MERN Stack tutorial by: https://github.com/burakorkmez
 
 * freeCodeCamp.org
 * codesistency
@@ -210,7 +213,7 @@ Tutorial: https://www.youtube.com/watch?v=F9gB5b4jgOI
 
 ---
 
-# Author
+## Author
 
 **Saniya Subair**
 GitHub: https://github.com/Minerva-san
