@@ -41,29 +41,13 @@ Designed as a beginner-to-intermediate full-stack project focused on clean archi
 
 ## 🛠️ Tech Stack
 
-### Frontend
+### Frontend: _React.js, Vite, Tailwind CSS_ 
 
-* React.js
-* Vite
-* Tailwind CSS 
+### Backend: _Node.js, Express.js_
 
-### Backend
+### Database: _MongoDB, Mongoose_
 
-* Node.js
-* Express.js
-
-### Database
-
-* MongoDB
-* Mongoose
-
-### Additional Tools & Packages
-
-* Axios
-* dotenv
-* cors
-* express-rate-limit
-* nodemon
+### Additional Tools & Packages: _axios, dotenv, cors, express-rate-limit, nodemon_
 
 ---
 
