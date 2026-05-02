@@ -2,6 +2,7 @@ import express from "express";
 //const express=require("express");
 import cors from "cors";
 import dotenv from "dotenv";
+import path from "path";
 
 //local imports
 import notesRoutes from "./routes/notesRoutes.js";
@@ -12,10 +13,14 @@ dotenv.config();
 
 const app=express();
 const PORT=process.env.PORT || 5001;
+const __dirname=path.resolve();
 
-app.use(cors({
-    origin:"http://localhost:5173",
-}))
+if(process.env.NODE_ENV!=="production"){
+    app.use(
+        cors({
+        origin:"http://localhost:5173",
+    }))
+}
 
 //middleware, add before routes
 app.use(express.json());
@@ -44,6 +49,13 @@ app.use("/api/notes",notesRoutes);
 // app.delete("/api/notes/:id",(req,res)=>{
 //     res.status(200).json({message:"post deleted successfully"});
 // });
+if(process.env.NODE_ENV==="production"){
+    app.use(express.static(path.join(__dirname,"../FE/dist")));
+    app.get("*",(req,res)=>{
+        res.sendFile(path.join(__dirname,"../FE","dist","index.html"));
+    });  
+}
+
 connectDB().then(()=>{ //run only if db connected
     app.listen(PORT,()=>{
         console.log(`server is running on PORT:`,PORT)
